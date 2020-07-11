@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: 0;
+}
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: hsl(204, 43%, 93%);
+}
+
+h1 {
+    color:hsl(179, 62%, 43%);
+}
+
+h3 {
+    margin-top: 1.5em;
+    color: hsl(71, 73%, 54%);
+}
+
+.max-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 45% 55%;
+    max-width: 725px;
+    margin: 2rem auto;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+
+.top__container {
+    background-color:  white;
+    grid-column: 1/4;
+    padding: 50px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.community {
+    margin-top: 20px;
+}
+
+.bottomLeft__container {
+    background-color:hsl(179, 62%, 43%) ;
+    grid-column: 1/2;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    color:hsl(204, 43%, 93%);
+    border-bottom-left-radius: 15px;
+}
+
+.bottomRight__container {
+    background-color:hsl(179, 64%, 60%) ;
+    grid-column: 2/3;
+    padding: 50px;
+    color:hsl(204, 43%, 93%);
+    border-bottom-right-radius: 15px;
+    align-items: center;
+}
+
+.signUpButton__bottomLeft {
+    border: none;
+    background-color:hsl(71, 73%, 54%);
+    width: 100%;
+    color:hsl(204, 43%, 93%);
+    margin-top: 2rem;
+}
+
+button{
+    cursor: pointer;
+    height: 3rem;
+    border-radius: 4px;
+    font-weight: 400;
+    -webkit-box-shadow: 4px 6px 21px 0px rgba(0,0,0,0.14);
+-moz-box-shadow: 4px 6px 21px 0px rgba(0,0,0,0.14);
+box-shadow: 4px 6px 21px 0px rgba(0,0,0,0.14);
+font-size: 18px;
+outline: none;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: 700;
+    display:flex;
+    align-items:center;
+    margin-top:20px;  
+}
+
+.suscrip {
+    color: hsl(220, 31%, 90%);
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.access {
+    margin-top: 15px;
+}
+
+.explain {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 375px){
+    .container {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottomLeft__container {
+        border-bottom-left-radius: 0px;
+    }
+
+    .bottomRight__container {
+        border-bottom-left-radius: 15px;
+    }
+}
