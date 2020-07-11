@@ -3,10 +3,19 @@
     padding:0;
     box-sizing: 0;
 }
+
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Karla', sans-serif;
     font-size: 16px;
     background-color: hsl(204, 43%, 93%);
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 h1 {
@@ -79,10 +88,10 @@ button {
     border-radius: 4px;
     font-weight: 400;
     -webkit-box-shadow: 4px 6px 21px 0px rgba(0,0,0,0.14);
--moz-box-shadow: 4px 6px 21px 0px rgba(0,0,0,0.14);
-box-shadow: 4px 6px 21px 0px rgba(0,0,0,0.14);
-font-size: 18px;
-outline: none;
+    -moz-box-shadow: 4px 6px 21px 0px rgba(0,0,0,0.14);
+    box-shadow: 4px 6px 21px 0px rgba(0,0,0,0.14);
+    font-size: 18px;
+    outline: none;
 }
 
 button:hover {
@@ -115,7 +124,7 @@ h2 {
     margin-top: 20px;
 }
 
-@media screen and (max-width: 375px){
+@media screen and (min-width: 375px) and (max-width: 600px){
     .container {
         width: 85%;
         display: flex;
